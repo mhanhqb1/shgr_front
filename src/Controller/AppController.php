@@ -65,16 +65,6 @@ class AppController extends Controller
             'httpOnly' => true
         ]);
         $this->loadComponent('Common');
-        $this->loadComponent('Auth', array(
-            'loginRedirect' => false,
-            'logoutRedirect' => false,
-            'loginAction' => array(
-                'controller' => 'customers',
-                'action' => 'login',
-                'plugin' => null
-            ),
-            'sessionKey' => 'Auth.ChoTreo'
-        ));
     }
     
     /**
