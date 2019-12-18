@@ -45,11 +45,13 @@
             </div>
             <div class="listing-cards-wrapper col-lg-12">
                 <div class="row">
-                    <?php for ($i = 0; $i < 24; $i++): ?>
+                    <?php if (!empty($data['products'])):?>
+                    <?php foreach ($data['products'] as $p): ?>
                     <div class="col-lg-3 col-sm-4 col-xs-6">
-                        <?php echo $this->element('product_item');?>
+                        <?php echo $this->element('product_item', $p);?>
                     </div>
-                    <?php endfor;?>
+                    <?php endforeach; ?>
+                    <?php endif;?>
                     <div class="col-lg-12 text-center m-top-20">
                         <a href="" class="btn btn-gradient btn-gradient-two">Xem tất cả</a>
                     </div>

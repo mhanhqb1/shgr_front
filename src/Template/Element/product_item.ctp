@@ -3,7 +3,7 @@
         <figure class="atbd_listing_thumbnail_area">
             <div class="atbd_listing_image">
                 <a href="">
-                    <img src="<?php echo $BASE_URL; ?>/images/p1.jpg" alt="listing image">
+                    <img src="<?php echo $image;?>" alt="<?php echo $name;?>">
                 </a>
             </div><!-- ends: .atbd_listing_image -->
             <div class="atbd_author atbd_author--thumb">
@@ -21,11 +21,11 @@
         <div class="atbd_listing_info">
             <div class="atbd_content_upper">
                 <h4 class="atbd_listing_title">
-                    <a href="">Flanders Heat &amp; Air Systems</a>
+                    <a href=""><?php echo $name;?></a>
                 </h4>
                 <div class="atbd_listing_meta">
-                    <span class="atbd_meta atbd_listing_price">$55.00</span>
-                    <span class="atbd_meta atbd_badge_open">Open Now</span>
+                    <span class="atbd_meta atbd_listing_price"><?php echo $price;?></span>
+                    <a href="<?php echo $source_url;?>" target="_blank" class="atbd_meta atbd_badge_open">Mua ngay</a>
                 </div><!-- End atbd listing meta -->
                 <div class="atbd_listing_data_list">
                     <ul>
@@ -38,14 +38,11 @@
             <div class="atbd_listing_bottom_content">
                 <div class="atbd_content_left">
                     <div class="atbd_listing_category">
-                        <a href=""><span class="la la-glass"></span>Restaurant</a>
+                        <a href="<?php echo $BASE_URL;?>/danh-muc/<?php echo $cate['slug'];?>"><span class="la <?php echo $cate['icon'];?>"></span><?php echo $cate['name'];?></a>
                     </div>
                 </div>
                 <ul class="atbd_content_right">
                     <li class="atbd_count"><span class="la la-eye"></span>900+</li>
-                    <li class="atbd_save">
-                        <span class="la la-heart-o"></span>
-                    </li>
                 </ul>
             </div><!-- end .atbd_listing_bottom_content -->
         </div><!-- ends: .atbd_listing_info -->

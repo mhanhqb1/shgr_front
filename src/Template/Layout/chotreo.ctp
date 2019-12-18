@@ -21,6 +21,18 @@
     <link rel="stylesheet" href="<?php echo $BASE_URL;?>/css/style.css">
     <!-- endinject -->
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $BASE_URL;?>/images/fevicon.png">
+    <script type="text/javascript">
+        var __atsmarttag = {
+            pub_id: '4666880670937288602'
+        };
+        (function () {
+            var script = document.createElement('script');
+            script.src = '//static.accesstrade.vn/js/atsmarttag.min.js?v=1.1.0';
+            script.type = 'text/javascript';
+            script.async = true;
+            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(script);
+        })();
+    </script>
 </head>
 
 <body>
