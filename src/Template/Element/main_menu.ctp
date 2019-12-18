@@ -7,7 +7,7 @@
                         <div class="menu-fullwidth">
                             <div class="logo-wrapper order-lg-0 order-sm-1">
                                 <div class="logo logo-top">
-                                    <a href="index.html"><img src="<?php echo $BASE_URL; ?>/images/logo-white.png" alt="logo image" class="img-fluid"></a>
+                                    <a href="<?php echo $BASE_URL;?>"><img src="<?php echo $BASE_URL; ?>/images/logo-white.png" alt="logo image" class="img-fluid"></a>
                                 </div>
                             </div><!-- ends: .logo-wrapper -->
                             <div class="menu-container order-lg-1 order-sm-0">
@@ -20,14 +20,14 @@
                                         <div class="collapse navbar-collapse" id="direo-navbar-collapse">
                                             <ul class="navbar-nav">
                                                 <li>
-                                                    <a href="index.html">Home</a>
+                                                    <a href="<?php echo $BASE_URL;?>">Home</a>
                                                 </li>
-                                                <li class="dropdown has_dropdown">
-                                                    <a href="#" class="dropdown-toggle" id="drop3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="drop3">
-                                                        <li><a href="all-listings-grid.html">Listing Grid</a></li>
-                                                    </ul>
+                                                <?php if(!empty($_settings['cates'])): ?>
+                                                <?php foreach ($_settings['cates'] as $cate): ?>
+                                                <li>
+                                                    <a href="<?php echo $BASE_URL;?>/danh-muc/<?php echo $cate['slug'];?>" ><?php echo $cate['name'];?></a>
                                                 </li>
+                                                <?php endforeach; endif;?>
                                             </ul>
                                         </div>
                                         <!-- /.navbar-collapse -->

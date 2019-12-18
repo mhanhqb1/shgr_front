@@ -13,7 +13,7 @@
                             <input class="form-control search_fields" type="text" placeholder="Nhập thông tin sản phẩm bạn cần tìm?">
                         </div>
                         <div class="atbd_submit_btn">
-                            <button type="submit" class="btn btn-block btn-gradient btn-gradient-one btn-md btn_search">Search</button>
+                            <button type="submit" class="btn btn-block btn-gradient btn-gradient-one btn-md btn_search">Tìm kiếm</button>
                         </div>
                     </div>
                 </form><!-- ends: .search_form -->

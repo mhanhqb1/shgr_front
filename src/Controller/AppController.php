@@ -44,6 +44,7 @@ class AppController extends Controller
     public $current_url = '';
     public $BASE_URL = '';
     public $BASE_URL_FRONT = '';
+    public $_settings = array();
 
     /**
      * Initialization hook method.
@@ -91,6 +92,7 @@ class AppController extends Controller
         $this->action = strtolower($this->request->getParam('action'));
         $this->current_url = Router::url($this->here, true);
         $this->BASE_URL = Router::fullBaseUrl();
+        $this->_settings = $this->getSettings();
         
     }
 
@@ -115,6 +117,8 @@ class AppController extends Controller
         $this->set('BASE_URL_FRONT', $this->BASE_URL_FRONT);
         $this->set('url', $this->request->getPath());
         $this->set('referer', Controller::referer());
+        
+        $this->set('_settings', $this->_settings);
 
         // Set default layout
         $this->setLayout();
@@ -170,5 +174,12 @@ class AppController extends Controller
         } else {
             $this->viewBuilder()->setLayout('chotreo');
         }
+    }
+    
+    // Get list cates
+    public function getSettings() {
+        $data = array();
+        $data = Api::call(Configure::read('API.url_settings_all'), array());
+        return $data;
     }
 }

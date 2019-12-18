@@ -9,114 +9,28 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-sm-6">
-                <div class="category-single category--img">
-                    <figure class="category--img4">
-                        <img src="<?php echo $BASE_URL; ?>/images/cat1.jpg" alt="">
-                        <figcaption class="overlay-bg">
-                            <a href="" class="cat-box">
-                                <div>
-                                    <div class="icon">
-                                        <span class="la la-cutlery"></span>
+            <?php if(!empty($_settings['cates'])): ?>
+            <?php foreach ($_settings['cates'] as $cate): ?>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="category-single category--img">
+                        <figure class="category--img4">
+                            <img src="<?php echo $BASE_URL; ?>/images/<?php echo $cate['image'];?>" alt="">
+                            <figcaption class="overlay-bg">
+                                <a href="" class="cat-box">
+                                    <div>
+                                        <div class="icon">
+                                            <span class="la <?php echo $cate['icon'];?>"></span>
+                                        </div>
+                                        <h4 class="cat-name"><?php echo $cate['name'];?></h4>
+                                        <span class="badge badge-pill badge-success">500.000+ sản phẩm</span>
                                     </div>
-                                    <h4 class="cat-name">Thiết bị điện tử</h4>
-                                    <span class="badge badge-pill badge-success">48 Listings</span>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div><!-- ends: .category-single -->
-            </div><!-- ends: .col -->
-            <div class="col-lg-4 col-sm-6">
-                <div class="category-single category--img">
-                    <figure class="category--img4">
-                        <img src="<?php echo $BASE_URL; ?>/images/cat2.jpg" alt="">
-                        <figcaption class="overlay-bg">
-                            <a href="" class="cat-box">
-                                <div>
-                                    <div class="icon">
-                                        <span class="la la-map-marker"></span>
-                                    </div>
-                                    <h4 class="cat-name">Sức khỏe & Làm đẹp</h4>
-                                    <span class="badge badge-pill badge-success">74 Listings</span>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div><!-- ends: .category-single -->
-            </div><!-- ends: .col -->
-            <div class="col-lg-4 col-sm-6">
-                <div class="category-single category--img">
-                    <figure class="category--img4">
-                        <img src="<?php echo $BASE_URL; ?>/images/cat3.jpg" alt="">
-                        <figcaption class="overlay-bg">
-                            <a href="" class="cat-box">
-                                <div>
-                                    <div class="icon">
-                                        <span class="la la-shopping-cart"></span>
-                                    </div>
-                                    <h4 class="cat-name">Thời trang nam & nữ</h4>
-                                    <span class="badge badge-pill badge-success">27 Listings</span>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div><!-- ends: .category-single -->
-            </div><!-- ends: .col -->
-            <div class="col-lg-4 col-sm-6">
-                <div class="category-single category--img">
-                    <figure class="category--img4">
-                        <img src="<?php echo $BASE_URL; ?>/images/cat4.jpg" alt="">
-                        <figcaption class="overlay-bg">
-                            <a href="" class="cat-box">
-                                <div>
-                                    <div class="icon">
-                                        <span class="la la-bank"></span>
-                                    </div>
-                                    <h4 class="cat-name">Siêu thị tạp hóa</h4>
-                                    <span class="badge badge-pill badge-success">103 Listings</span>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div><!-- ends: .category-single -->
-            </div><!-- ends: .col -->
-            <div class="col-lg-4 col-sm-6">
-                <div class="category-single category--img">
-                    <figure class="category--img4">
-                        <img src="<?php echo $BASE_URL; ?>/images/cat5.jpg" alt="">
-                        <figcaption class="overlay-bg">
-                            <a href="" class="cat-box">
-                                <div>
-                                    <div class="icon">
-                                        <span class="la la-bed"></span>
-                                    </div>
-                                    <h4 class="cat-name">Hàng gia dụng và đời sống</h4>
-                                    <span class="badge badge-pill badge-success">11 Listings</span>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div><!-- ends: .category-single -->
-            </div><!-- ends: .col -->
-            <div class="col-lg-4 col-sm-6">
-                <div class="category-single category--img">
-                    <figure class="category--img4">
-                        <img src="<?php echo $BASE_URL; ?>/images/cat6.jpg" alt="">
-                        <figcaption class="overlay-bg">
-                            <a href="" class="cat-box">
-                                <div>
-                                    <div class="icon">
-                                        <span class="la la-glass"></span>
-                                    </div>
-                                    <h4 class="cat-name">Sản phẩm khác</h4>
-                                    <span class="badge badge-pill badge-success">29 Listings</span>
-                                </div>
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div><!-- ends: .category-single -->
-            </div><!-- ends: .col -->
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div><!-- ends: .category-single -->
+                </div><!-- ends: .col -->
+            <?php endforeach; ?>
+            <?php endif;?>
         </div>
     </div>
 </section><!-- ends: .categories-cards -->
