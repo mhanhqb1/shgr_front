@@ -10,7 +10,7 @@
                 <form action="/" class="search_form">
                     <div class="atbd_seach_fields_wrapper">
                         <div class="single_search_field search_query">
-                            <input class="form-control search_fields" type="text" placeholder="Nhập thông tin sản phẩm bạn cần tìm?">
+                            <input class="form-control search_fields" type="text" placeholder="Nhập tên hoặc link sản phẩm bạn cần tìm?">
                         </div>
                         <div class="atbd_submit_btn">
                             <button type="submit" class="btn btn-block btn-gradient btn-gradient-one btn-md btn_search">Tìm kiếm</button>
