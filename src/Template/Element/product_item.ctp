@@ -7,9 +7,9 @@
                 </a>
             </div><!-- ends: .atbd_listing_image -->
             <div class="atbd_author atbd_author--thumb">
-                <a href="">
-                    <img src="<?php echo $BASE_URL; ?>/images/author-thumb2.jpg" alt="Author Image">
-                    <span class="custom-tooltip">Jeffery A, Owner</span>
+                <a href="<?php echo $source_type['url'];?>">
+                    <img src="<?php echo $source_type['logo'];?>" width="42px" height="40px" alt="<?php echo $source_type['name'];?>">
+                    <span class="custom-tooltip"><?php echo $source_type['description'];?></span>
                 </a>
             </div>
             <div class="atbd_thumbnail_overlay_content">
@@ -30,7 +30,7 @@
                 <div class="atbd_listing_data_list">
                     <ul>
                         <li>
-                            <p><span class="la la-calendar-check-o"></span>Posted 2 months ago</p>
+                            <p><span class="la la-calendar-check-o"></span><?php echo !empty($updated) ? date('Y-m-d H:i', $updated) : 'hôm nay';?> </p>
                         </li>
                     </ul>
                 </div><!-- End atbd listing meta -->
