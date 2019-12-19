@@ -3,8 +3,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title">
-                    <h2>Danh mục</h2>
-                    <p>Discover best things to do restaurants, shopping, hotels, cafes and places around the world by categories.</p>
+                    <h2>Danh mục sản phẩm</h2>
                 </div>
             </div>
         </div>
@@ -40,7 +39,7 @@
             <div class="col-lg-12">
                 <div class="section-title">
                     <h2>Sản phẩm <span>nổi bật</span></h2>
-                    <p>Explore the popular listings around the world</p>
+                    <p>Danh sách các sản phẩm được yêu thích</p>
                 </div>
             </div>
             <div class="listing-cards-wrapper col-lg-12">
@@ -65,8 +64,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title">
-                    <h2>Why <span>Direo</span> for your Business?</h2>
-                    <p>Explore the popular listings around the world</p>
+                    <h2>Tính năng nổi bật</h2>
+                    <p>Tại sao nên sử dụng <span>ChoTreo.Com</span> khi mua hàng online</p>
                 </div>
             </div>
             <div class="col-lg-12">
@@ -77,31 +76,31 @@
                     <div class="col-lg-5 offset-lg-1 col-md-6 mt-5 mt-md-0">
                         <ul class="feature-list-wrapper list-unstyled">
                             <li>
+                                <div class="icon"><span class="circle-primary"><i class="la la-line-chart"></i></span></div>
+                                <div class="list-content">
+                                    <h4>Yên tâm mua sắm</h4>
+                                    <p>Tìm nơi bán rẻ, cảnh báo giá hớ, ... ngay trong lúc shopping</p>
+                                </div>
+                            </li>
+                            <li>
                                 <div class="icon"><span class="circle-secondary"><i class="la la-check-circle"></i></span></div>
                                 <div class="list-content">
-                                    <h4>Claim Listing</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit.</p>
+                                    <h4>Theo dõi sản phẩm</h4>
+                                    <p>Theo dõi sản phẩm bạn yêu thích, thông báo khi sản phẩm giảm giá.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="icon"><span class="circle-success"><i class="la la-money"></i></span></div>
                                 <div class="list-content">
-                                    <h4>Paid Listing</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon"><span class="circle-primary"><i class="la la-line-chart"></i></span></div>
-                                <div class="list-content">
-                                    <h4>Promote your Business</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit.</p>
+                                    <h4>Tiết kiệm chi phí</h4>
+                                    <p>Tìm thông tin khuyến mãi, mã giảm giá cho các sản phẩm.</p>
                                 </div>
                             </li>
                         </ul><!-- ends: .feature-list-wrapper -->
-                        <ul class="action-btns list-unstyled">
+<!--                        <ul class="action-btns list-unstyled">
                             <li><a href="" class="btn btn-success">See our Pricing</a></li>
                             <li><a href="" class="btn btn-primary">Submit Listings</a></li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
@@ -170,39 +169,18 @@
                 </div>
             </div><!-- ends: .col-lg-12 -->
             <div class="testimonial-carousel owl-carousel">
+                <?php foreach ($data['reviews'] as $r): ?>
                 <div class="carousel-single">
                     <div class="author-thumb">
-                        <img src="<?php echo $BASE_URL; ?>/images/tthumb1.jpg" alt="" class="rounded-circle">
+                        <img src="<?php echo $r['image'];?>" alt="Đánh giá ChoTreo" class="rounded-circle">
                     </div>
                     <div class="author-info">
-                        <h4>Francis Burton</h4>
-                        <span>Toronto, Canada</span>
+                        <h4><?php echo $r['name'];?></h4>
+                        <span><?php echo $r['note'];?></span>
                     </div>
-                    <p class="author-comment">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident
-                        culpa officia deserunt mollit.</p>
+                    <p class="author-comment"><?php echo $r['message'];?></p>
                 </div><!-- ends: .carousel-single -->
-                <div class="carousel-single">
-                    <div class="author-thumb">
-                        <img src="<?php echo $BASE_URL; ?>/images/tthumb1.jpg" alt="" class="rounded-circle">
-                    </div>
-                    <div class="author-info">
-                        <h4>Francis Burton</h4>
-                        <span>Toronto, Canada</span>
-                    </div>
-                    <p class="author-comment">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident
-                        culpa officia deserunt mollit.</p>
-                </div><!-- ends: .carousel-single -->
-                <div class="carousel-single">
-                    <div class="author-thumb">
-                        <img src="<?php echo $BASE_URL; ?>/images/tthumb1.jpg" alt="" class="rounded-circle">
-                    </div>
-                    <div class="author-info">
-                        <h4>Francis Burton</h4>
-                        <span>Toronto, Canada</span>
-                    </div>
-                    <p class="author-comment">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident
-                        culpa officia deserunt mollit.</p>
-                </div><!-- ends: .carousel-single -->
+                <?php endforeach; ?>
             </div><!-- ends: .testimonial-carousel -->
         </div>
     </div>
