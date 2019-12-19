@@ -17,34 +17,6 @@
                         </div>
                     </div>
                 </form><!-- ends: .search_form -->
-                <div class="directory_home_category_area">
-                    <ul class="categories">
-                        <li>
-                            <a href="">
-                                <span class="color-primary"><i class="la la-cutlery"></i></span>
-                                Shopee
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="color-success"><i class="la la-map-marker"></i></span>
-                                Lazada
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="color-warning"><i class="la la-shopping-cart"></i></span>
-                                Tiki
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="color-danger"><i class="la la-bed"></i></span>
-                                Sendo
-                            </a>
-                        </li>
-                    </ul>
-                </div><!-- ends: .directory_home_category_area -->
             </div><!-- ends: .col-lg-10 -->
         </div>
     </div>

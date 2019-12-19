@@ -4,39 +4,39 @@
             <div class="row">
                 <div class="col-lg-2 col-sm-6">
                     <div class="widget widget_pages">
-                        <h2 class="widget-title">Company Info</h2>
+                        <h2 class="widget-title">Website</h2>
                         <ul class="list-unstyled">
-                            <li class="page-item"><a href="">About Us</a></li>
-                            <li class="page-item"><a href="">Conact Us</a></li>
-                            <li class="page-item"><a href="">Our Listings</a></li>
-                            <li class="page-item"><a href="">Our Pricings</a></li>
-                            <li class="page-item"><a href="">Support</a></li>
-                            <li class="page-item"><a href="">Privacy Policy</a></li>
+                            <li class="page-item"><a href="">Giới thiệu</a></li>
+                            <li class="page-item"><a href="">Liên hệ</a></li>
+                            <li class="page-item"><a href="">Hỗ trợ</a></li>
+                            <li class="page-item"><a href="">Quyền riêng tư</a></li>
+                            <li class="page-item"><a href="">Điều khoản</a></li>
                         </ul>
                     </div>
                 </div><!-- ends: .col-lg-3 -->
                 <div class="col-lg-3 d-flex justify-content-lg-center  col-sm-6">
                     <div class="widget widget_pages">
-                        <h2 class="widget-title">Helpful Links</h2>
+                        <h2 class="widget-title">Danh mục sản phẩm</h2>
                         <ul class="list-unstyled">
-                            <li class="page-item"><a href="">Join Direo</a></li>
-                            <li class="page-item"><a href="">Sign In</a></li>
-                            <li class="page-item"><a href="">How it Work</a></li>
-                            <li class="page-item"><a href="">Advantages</a></li>
-                            <li class="page-item"><a href="">Direo App</a></li>
-                            <li class="page-item"><a href="">Packages</a></li>
+                            <?php if (!empty($_settings['cates'])): ?>
+                                <?php foreach ($_settings['cates'] as $cate): ?>
+                                    <li class="page-item">
+                                        <a href="<?php echo $BASE_URL; ?>/danh-muc/<?php echo $cate['slug']; ?>" ><?php echo $cate['name']; ?></a>
+                                    </li>
+                            <?php endforeach; endif; ?>
                         </ul>
                     </div>
                 </div><!-- ends: .col-lg-3 -->
                 <div class="col-lg-3 col-sm-6">
                     <div class="widget widget_social">
-                        <h2 class="widget-title">Connect with Us</h2>
+                        <h2 class="widget-title">Liên hệ</h2>
                         <ul class="list-unstyled social-list">
-                            <li><a href=""><span class="mail"><i class="la la-envelope"></i></span> Contact Support</a></li>
-                            <li><a href=""><span class="twitter"><i class="fab fa-twitter"></i></span> Twitter</a></li>
-                            <li><a href=""><span class="facebook"><i class="fab fa-facebook-f"></i></span> Facebook</a></li>
-                            <li><a href=""><span class="instagram"><i class="fab fa-instagram"></i></span> Instagram</a></li>
-                            <li><a href=""><span class="gplus"><i class="fab fa-google-plus-g"></i></span> Google+</a></li>
+                            <?php if (!empty($_settings['social'])): ?>
+                                <?php foreach ($_settings['social'] as $s): ?>
+                                    <li>
+                                        <a href="<?php echo $s['url'];?>" ><span class="<?php echo $s['class'];?>"><i class="fab <?php echo $s['icon'];?>"></i></span> <?php echo $s['name'];?></a>
+                                    </li>
+                            <?php endforeach; endif; ?>
                         </ul>
                     </div><!-- ends: .widget -->
                 </div><!-- ends: .col-lg-3 -->
@@ -61,9 +61,9 @@
                 <div class="col-lg-12">
                     <div class="footer-bottom--content">
                         <a href="" class="footer-logo"><img src="<?php echo $BASE_URL; ?>/images/logo.png" alt=""></a>
-                        <p class="m-0 copy-text">©2019 Direo. Made with <span class="la la-heart-o"></span> by <a href="">Aazztech</a></p>
+                        <p class="m-0 copy-text">©2019 ChoTreo.Com. Made with <span class="la la-heart-o"></span> by <a href="https://hoanganholine.com">HoangAnhOnline.Com</a></p>
                         <ul class="list-unstyled lng-list">
-                            <li><a href="">English</a></li>
+                            <li><a href="">Tiếng Việt</a></li>
                         </ul>
                     </div>
                 </div>
