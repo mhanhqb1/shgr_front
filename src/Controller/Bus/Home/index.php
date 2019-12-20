@@ -27,6 +27,23 @@ $data['reviews'] = array(
         'name' => 'Hoàng Anh',
         'note' => 'Admin',
         'message' => 'Không biết nói thêm gì nữa, vợ con tôi đã nói hết rồi.'
+    ),
+    array(
+        'image' => $this->BASE_URL.'/images/tthumb1.jpg',
+        'name' => 'Người ấy',
+        'note' => 'Trịnh Thăng Bình',
+        'message' => 'Người ấy có tốt với em, yêu em như anh đã từng yêu?'
+        . '<br/>Người ấy có biết tính em hay trách móc, thích nuông chiều?'
+        . '<br/>Anh nhớ em nhiều... Anh nhớ em nhiều....'
+        . '<br/><b>Ai đó đọc được tin nhắn này thì nhớ nhắc người yêu dùng ChoTreo.Com để tiết kiệm chi phí khi mua sắm online nhé.</b>'
+    ),
+    array(
+        'image' => $this->BASE_URL.'/images/tthumb1.jpg',
+        'name' => 'Người đi ngang đời tôi',
+        'note' => 'Ưng Hoàng Phúc',
+        'message' => 'Nếu có ai đã làm tôi yêu thêm một người.'
+        . '<br/>Đó là em đã làm tôi chia đôi cuộc tình.'
+        . '<br/><b>Từ ngày quen ChoTreo.Com, tôi đã chấm dứt cuộc tình với em Mua Giá Hớ.</b>'
     )
 );
 $this->set(compact(

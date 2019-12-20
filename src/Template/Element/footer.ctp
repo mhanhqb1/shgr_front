@@ -42,9 +42,9 @@
                 </div><!-- ends: .col-lg-3 -->
                 <div class="col-lg-4 col-sm-6">
                     <div class="widget widget_text">
-                        <h2 class="widget-title">Direo on Mobile</h2>
+                        <h2 class="widget-title">Ứng dụng ChoTreo.Com</h2>
                         <div class="textwidget">
-                            <p>Download the Direo app today so you can find your events anytime, anywhere.</p>
+                            <p>Tải ứng dụng ChoTreo ngay hôm nay để yên tâm khi mua sắm online.</p>
                             <ul class="list-unstyled store-btns">
                                 <li><a href="" class="btn-gradient btn-gradient-two btn btn-md btn-icon icon-left"><span class="fab fa-apple"></span> App Store</a></li>
                                 <li><a href="" class="btn btn-dark btn-md btn-icon btn-icon"><span class="fab fa-android"></span> Google Play</a></li>
