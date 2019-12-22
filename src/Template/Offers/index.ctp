@@ -5,7 +5,7 @@
                 <div class="atbd_generic_header">
                     <div class="atbd_generic_header_title">
                         <!--<h4>Sản phẩm</h4>-->
-                        <p>Tổng sản phẩm: <?php echo $total; ?></p>
+                        <p>Tổng số: <?php echo $total; ?></p>
                     </div><!-- ends: .atbd_generic_header_title -->
 <!--                    <div class="atbd_listing_action_btn btn-toolbar align-items-center" role="toolbar">
                          Views dropdown 
@@ -34,8 +34,8 @@
                 <div class="row">
                     <?php if (!empty($data)): ?>
                         <?php foreach ($data as $p): ?>
-                            <div class="col-lg-3 col-sm-4 col-xs-6">
-                                <?php echo $this->element('product_item', $p); ?>
+                            <div class="col-lg-12">
+                                <?php echo $this->element('offer_item', $p); ?>
                             </div>
                         <?php endforeach; ?>
                     <?php endif; ?>

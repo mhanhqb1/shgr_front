@@ -37,7 +37,7 @@
                                                     <a href="<?php echo $BASE_URL; ?>">Flash Sale</a>
                                                 </li>
                                                 <li>
-                                                    <a href="<?php echo $BASE_URL; ?>">Khuyến mãi</a>
+                                                    <a href="<?php echo $BASE_URL; ?>/khuyen-mai">Khuyến mãi</a>
                                                 </li>
                                                 <li>
                                                     <a href="<?php echo $BASE_URL; ?>">Sản phẩm hot</a>
