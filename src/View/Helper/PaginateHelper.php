@@ -66,17 +66,17 @@ class PaginateHelper extends AppHelper {
             $start = 1;
             $end = $totalPage;
         }
-        $html = '<nav class="numbering">';
-        $html .='<ul class="pagination paging">';
+        $html = '<nav class="navigation pagination d-flex justify-content-end" role="navigation">';
+        $html .='<div class="nav-links">';
         if ($end > 1) {
             for ($i = $start; $i <= $end; $i++) {
                 if ($i == $page) {
-                    $nav .= "<li class=\"active\"><a href=\"#\">{$i}<span class='sr-only'>(current)</span></a></li>";
+                    $nav .= "<span aria-current='page' class='page-numbers current'>{$i}</span>";
                 } else {
                     if (!empty($function)) {
                         $nav .= "<li><a onclick='".$function."({$i})'>{$i}</a></li>";
                     } else {
-                        $nav .= "<li><a href='" . $url . "page={$i}'>{$i}</a></li>";
+                        $nav .= "<a class='page-numbers' href='{$url}page={$i}'>{$i}</a>";
                     }
                 }
             }
@@ -84,7 +84,7 @@ class PaginateHelper extends AppHelper {
                 if (!empty($function)) {
                     $prev = "<li class=\"prev\"><a onclick='".$function."(".($page - 1).")'>← </a></li>";
                 } else {
-                    $prev = "<li><a href='" . $url . "page=" . ($page - 1) . "' aria-label='Previous'><span aria-hidden='true'>&laquo;</span></a></li>";
+                    $prev = "<a class='prev page-numbers' href='". $url . "page=" . ($page - 1) . "'><span class='la la-long-arrow-left'></span></a>";
                 }
             } else {
                 $prev = "";
@@ -93,7 +93,7 @@ class PaginateHelper extends AppHelper {
                 if (!empty($function)) {
                     $next = "<li class=\"next\"><a onclick='".$function."(".($page + 1).")'> →</a></li>";
                 } else {
-                    $next = "<li><a href='" . $url . "page=" . ($page + 1) . "'  aria-label='Next'><span aria-hidden='true'>&raquo;</span></a></li>";
+                    $next = "<a class='next page-numbers' href='". $url . "page=" . ($page + 1) . "'><span class='la la-long-arrow-right'></span></a>";
                 }
             } else {
                 $next = "";
@@ -104,7 +104,7 @@ class PaginateHelper extends AppHelper {
             $html .= "{$next}";
         }
 
-        $html .= '</ul>';
+        $html .= '</div>';
         
         $html .= '</nav>';
         return $html;

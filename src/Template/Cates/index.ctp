@@ -42,7 +42,8 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <nav class="navigation pagination d-flex justify-content-end" role="navigation">
+                        <?php echo $this->Paginate->render($total, $limit); ?>
+<!--                        <nav class="navigation pagination d-flex justify-content-end" role="navigation">
                             <div class="nav-links">
                                 <a class="prev page-numbers" href=""><span class="la la-long-arrow-left"></span></a>
                                 <a class="page-numbers" href="">1</a>
@@ -50,7 +51,7 @@
                                 <a class="page-numbers" href="">3</a>
                                 <a class="next page-numbers" href=""><span class="la la-long-arrow-right"></span></a>
                             </div>
-                        </nav>
+                        </nav>-->
                     </div>
                 </div>
             </div><!-- ends: .listing-items -->
