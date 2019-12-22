@@ -115,7 +115,7 @@ class AppController extends Controller
         $this->set('current_url', $this->current_url);
         $this->set('BASE_URL', $this->BASE_URL);
         $this->set('BASE_URL_FRONT', $this->BASE_URL_FRONT);
-        $this->set('url', $this->request->getPath());
+        $this->set('_url', $this->request->getPath());
         $this->set('referer', Controller::referer());
         
         $this->set('_settings', $this->_settings);

@@ -43,7 +43,7 @@ class PaginateHelper extends AppHelper {
                 }
             }
             $homeUrl = Router::fullBaseUrl() . USE_SUB_DIRECTORY;
-            $url = $homeUrl.'/'. $this->request->getPath() . '?';
+            $url = $homeUrl. $this->request->getPath() . '?';
             if (!empty($param)) {
                 $url = $url . implode('&', $param) . '&';
             }

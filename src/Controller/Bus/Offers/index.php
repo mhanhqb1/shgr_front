@@ -12,10 +12,12 @@ $data = !empty($result['data']) ? $result['data'] : array();
 $total = !empty($result['total']) ? $result['total'] : 0;
 $pageTitle = 'Khuyến mãi';
 $limit = $param['limit'];
+$type = !empty($param['type']) ? $param['type'] : '';
 
 $this->set(compact(
     'data',
     'total',
     'pageTitle',
-    'limit'
+    'limit',
+    'type'
 ));

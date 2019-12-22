@@ -17,10 +17,12 @@ $data = !empty($result['data']) ? $result['data'] : array();
 $total = !empty($result['total']) ? $result['total'] : 0;
 $pageTitle = !empty($data) ? $data[0]['cate']['name'] : '';
 $limit = $param['limit'];
+$type = !empty($param['type']) ? $param['type'] : '';
 
 $this->set(compact(
     'data',
     'total',
     'pageTitle',
-    'limit'
+    'limit',
+    'type'
 ));
