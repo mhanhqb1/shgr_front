@@ -1,8 +1,11 @@
+<?php
+$urlDetail = $BASE_URL.'/san-pham/'.$name.'-.i.'.$id;
+?>
 <div class="atbd_single_listing ">
     <article class="atbd_single_listing_wrapper">
         <figure class="atbd_listing_thumbnail_area">
             <div class="atbd_listing_image">
-                <a href="">
+                <a href="<?php echo $urlDetail;?>">
                     <img src="<?php echo $image;?>" alt="<?php echo $name;?>">
                 </a>
             </div><!-- ends: .atbd_listing_image -->
@@ -21,7 +24,7 @@
         <div class="atbd_listing_info">
             <div class="atbd_content_upper">
                 <h4 class="atbd_listing_title">
-                    <a href=""><?php echo $name;?></a>
+                    <a href="<?php echo $urlDetail;?>"><?php echo $name;?></a>
                 </h4>
                 <div class="atbd_listing_meta">
                     <span class="atbd_meta atbd_listing_price"><?php echo $price;?></span>
