@@ -51,7 +51,20 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div class="menu-right order-lg-2 order-sm-2"></div><!-- ends: .menu-right -->
+                            <div class="menu-right order-lg-2 order-sm-2">
+                                <div class="search-wrapper">
+                                    <div class="nav_right_module search_module">
+                                        <span class="icon-left" id="basic-addon9"><i class="la la-search"></i></span>
+                                        <div class="search_area">
+                                            <form action="<?php echo $BASE_URL;?>/tim-kiem" method="GET" style="margin-block-end: 0;">
+                                                <div class="input-group input-group-light">
+                                                    <input type="text" name="s" class="form-control search_field top-search-field" placeholder="Nhập tên hoặc link sản phẩm bạn cần tìm?" autocomplete="off">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- ends: .menu-right -->
                         </div>
                     </div>
                 </div>
