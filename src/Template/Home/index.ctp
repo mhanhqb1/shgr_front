@@ -107,7 +107,7 @@
         </div>
     </div>
 </section><!-- ends: .cta -->
-<section class="places section-padding">
+<section class="places section-padding section-bg">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -116,19 +116,13 @@
                     <p>Thông tin khuyến mãi mới nhất, cập nhật liên tục 24/24.</p>
                 </div>
             </div>
-            <div class="col-lg-12">
+            <div class="col-lg-12 listing-items">
                 <div class="cat-places-wrapper">
                     <?php if (!empty($data['offers'])): ?>
                     <?php foreach ($data['offers'] as $of): ?>
-                    <div class="category-place-single">
-                        <figure>
-                            <a href="<?php echo $of['url'];?>" target="_blank"><img src="<?php echo $of['image']; ?>" alt="<?php echo $of['name'];?>"></a>
-                            <figcaption>
-                                <h3><?php echo $of['name'];?></h3>
-                                <p><?php echo $of['start_date'].' - '.$of['end_date'];?></p>
-                            </figcaption>
-                        </figure>
-                    </div>
+                        <div class="col-lg-12">
+                            <?php echo $this->element('offer_item', $of); ?>
+                        </div>
                     <?php endforeach; ?>
                     <?php endif;?>
                 </div><!-- ends: .col-lg-12 -->
@@ -136,7 +130,7 @@
         </div>
     </div>
 </section><!-- ends: .places -->
-<section class="testimonial-wrapper section-padding--bottom">
+<section class="testimonial-wrapper section-padding--bottom section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
