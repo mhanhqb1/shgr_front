@@ -7,10 +7,10 @@
                     <h2 class="title">Yên tâm tuyệt đối khi mua sắm online</h2>
                     <p class="sub_title">Tìm ra nơi bán Giá Rẻ Nhất. Phát hiện Khuyến Mại Ảo. Hỗ trợ Tiki, Sendo, Shopee, Lazada, Adayroi, ...</p>
                 </div><!-- ends: .search_title_area -->
-                <form action="/" class="search_form">
+                <form action="<?php echo $BASE_URL;?>/tim-kiem" class="search_form" method="GET">
                     <div class="atbd_seach_fields_wrapper">
                         <div class="single_search_field search_query">
-                            <input class="form-control search_fields" type="text" placeholder="Nhập tên hoặc link sản phẩm bạn cần tìm?">
+                            <input class="form-control search_fields" type="text" name="s" placeholder="Nhập tên hoặc link sản phẩm bạn cần tìm?">
                         </div>
                         <div class="atbd_submit_btn">
                             <button type="submit" class="btn btn-block btn-gradient btn-gradient-one btn-md btn_search">Tìm kiếm</button>

@@ -65,6 +65,15 @@ $pageTitle = !empty($pageTitle) ? $pageTitle : '';
         <?php echo $this->fetch('content'); ?>
 
         <?php echo $this->element('footer'); ?>
+        
+        <script type="text/javascript">
+            var BASE_URL = '<?php echo $BASE_URL; ?>';
+            var controller = '<?php echo $controller; ?>';
+            var action = '<?php echo $action; ?>';
+            var currentUrl = '<?php echo $current_url; ?>';
+            var referer = '<?php echo $referer; ?>';
+            var _csrfToken = '<?php echo $this->request->getParam('_csrfToken'); ?>';
+        </script>
 
         <!-- inject:js-->
         <script src="<?php echo $BASE_URL; ?>/js/jquery/jquery-1.12.3.js"></script>
