@@ -7,7 +7,7 @@
                         <div class="menu-fullwidth">
                             <div class="logo-wrapper order-lg-0 order-sm-1">
                                 <div class="logo logo-top">
-                                    <a href="<?php echo $BASE_URL; ?>"><img src="<?php echo $BASE_URL; ?>/images/logo-white.png" alt="logo image" class="img-fluid"></a>
+                                    <a href="<?php echo $BASE_URL; ?>"><img src="<?php echo $BASE_URL; ?>/images/logo.png" alt="logo image" width="110px" class="img-fluid"></a>
                                 </div>
                             </div><!-- ends: .logo-wrapper -->
                             <div class="menu-container order-lg-1 order-sm-0">

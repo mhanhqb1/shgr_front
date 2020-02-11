@@ -7518,5 +7518,8 @@ p {
     padding: 10px 0;
   }
 }
+.top-menu-area .menu-fullwidth {
+    min-height: 60px;
+}
 
 /*# sourceMappingURL=maps/style.css.map */

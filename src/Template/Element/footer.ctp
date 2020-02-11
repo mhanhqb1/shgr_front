@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-bottom--content">
-                        <a href="" class="footer-logo"><img src="<?php echo $BASE_URL; ?>/images/logo.png" alt=""></a>
+                        <a href="" class="footer-logo"><img src="<?php echo $BASE_URL; ?>/images/logo.png" alt="" width="118px" height="38px"></a>
                         <p class="m-0 copy-text">©2019 ChoTreo.Com. Made with <span class="la la-heart-o"></span> by <a href="https://hoanganholine.com">HoangAnhOnline.Com</a></p>
                         <ul class="list-unstyled lng-list">
                             <li><a href="">Tiếng Việt</a></li>
