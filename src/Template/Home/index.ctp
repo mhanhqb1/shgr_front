@@ -52,7 +52,7 @@
                     <?php endforeach; ?>
                     <?php endif;?>
                     <div class="col-lg-12 text-center m-top-20">
-                        <a href="" class="btn btn-gradient btn-gradient-two">Xem tất cả</a>
+                        <a href="<?php echo $BASE_URL;?>/danh-sach-san-pham" class="btn btn-gradient btn-gradient-two">Xem tất cả</a>
                     </div>
                 </div>
             </div><!-- ends: .listing-cards-wrapper -->

@@ -54,6 +54,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/', ['controller' => 'Home', 'action' => 'index']);
     $routes->connect('/san-pham/*', ['controller' => 'Products', 'action' => 'detail']);
+    $routes->connect('/danh-sach-san-pham/*', ['controller' => 'Products', 'action' => 'index']);
     $routes->connect('/danh-muc/*', ['controller' => 'Cates', 'action' => 'index']);
     $routes->connect('/khuyen-mai/*', ['controller' => 'Offers', 'action' => 'index']);
     $routes->connect('/tim-kiem/*', ['controller' => 'Search', 'action' => 'index']);

@@ -13,4 +13,11 @@ class ProductsController extends AppController {
     public function detail($name) {
         include ('Bus/Products/detail.php');
     }
+    
+    /**
+     * List cate
+     */
+    public function index() {
+        include ('Bus/Products/index.php');
+    }
 }
